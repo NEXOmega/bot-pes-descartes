@@ -18,5 +18,8 @@ Pour contribuer au bot une fois cloner vous pouvez créer une branche, y faire v
 
 ```bash
 git branch <Nom de la branche>
-git push origin <Nom de la branche> 
+git add .
+git commit -m "Message"
+git push origin <Nom de la branche>
+git pull origin
 ```
