@@ -7,7 +7,7 @@ class MiscCog(commands.Cog):
             
     @commands.command()
     async def info(self, ctx):
-        await ctx.channel.send("Github : ")
+        await ctx.channel.send("Github : https://github.com/NEXOmega/bot-pes-descartes")
 
     @commands.command(help="Show the ping of the bot")
     async def ping(self, ctx):

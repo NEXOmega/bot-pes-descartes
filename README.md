@@ -23,3 +23,5 @@ git add .
 git commit -m "Message"
 git push origin <Nom de la branche>
 ```
+
+[Lien vers une playlist expliquant le principe de Git](https://www.youtube.com/playlist?list=PLjwdMgw5TTLXuY5i7RW0QqGdW0NZntqiP)
