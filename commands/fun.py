@@ -5,7 +5,7 @@ import asyncio
 class FunCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        
+
     @commands.command(help="Ecris un message de façon animée")
     async def animate(self, ctx, *args):
         await ctx.message.delete()
