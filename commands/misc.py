@@ -15,13 +15,13 @@ class MiscCog(commands.Cog):
     async def ping(self, ctx):
         await ctx.channel.send("Pong !")
 
-    @commands.command(help="Get help on tp")
+    @commands.command(help="Get help on tp; $tp list (tp), $tp get (td) (exo)")
     async def tp(self, ctx, *args):
         if(args[0]=="list"):
             mypath = f"./data/tds/td{args[1]}"
             onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-            await ctx.channel.send(onlyfiles)
-            print(mypath)
+            files = ", ".join(onlyfiles)
+            await ctx.channel.send(f"Nous avons les td :  {files}")
         if(args[0]=="get"):
             mypath = f"./data/tds/td{args[1]}/exo{args[2]}.py"
             with open(mypath) as f:
